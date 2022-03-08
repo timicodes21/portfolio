@@ -4,6 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagramSquare } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 
 import { Row, Container } from 'react-bootstrap';
 
@@ -29,7 +30,7 @@ const Footer = () => {
                                     </div>
                                     <div className="col-3">
                                         <div className="social-div pointer">
-                                            <a href=""><FaFacebookF /></a>
+                                            <a href="https://wa.me/+2348124793586"><FaWhatsapp /></a>
                                         </div>
                                     </div>
                                     <div className="col-3">
