@@ -6,7 +6,7 @@ import intuitive from '../assets/intuitive.jpg'
 import responsive from '../assets/responsive.jpg'
 import userfriendly from '../assets/userfriendly.jpg'
 import resume from '../assets/resume.png'
-import Graph from './Graph';
+import { AiOutlineClose } from 'react-icons/ai'
 
 const About = () => {
     const [display1, setDisplay1] = useState(true)
@@ -77,13 +77,16 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 pt-5">
+                    <div className="col-12 col-md-6 pt-5 pt-md-1">
                         <div>
-                        {display1 && <Image onMouseEnter={handleMouse1} fluid src={resume} className="about-image" />}
+                        {display1 && <Image onMouseEnter={handleMouse1} onClick={handleMouse1} fluid src={resume} className="about-image" />}
                         {display2 && <div onMouseLeave={handleMouse2} className="px-md-5 mt-5">
                             <div className="bg-white p-5">
                             <div className="mb-5 pb-5">
-                                <h4 className="font-18 font-700 text-ash">Resume</h4>
+                                <div className="d-flex justify-content-between">
+                                    <h4 className="font-18 font-700 text-ash">Resume</h4>
+                                    <AiOutlineClose className='close-icon' onClick={handleMouse2} />
+                                </div>
                                 <p className="text-pink font-14">Frontend Developer</p>
                             </div>
                             <div className="mt-5">

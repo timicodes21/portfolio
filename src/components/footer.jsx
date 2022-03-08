@@ -1,11 +1,9 @@
 import React from 'react'
 import { FaArrowUp } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
-import { FaFacebookF } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagramSquare } from 'react-icons/fa'
 import { FaWhatsapp } from 'react-icons/fa'
-
 import { Row, Container } from 'react-bootstrap';
 
 
