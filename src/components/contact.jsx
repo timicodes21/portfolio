@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
+import Aos from "aos"
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -18,19 +19,23 @@ const Contact = () => {
         setTimeout(setSubmit("SUBMIT"), 4000)
         console.log(name, email, message)
     }
+
+    useEffect(() => {
+        Aos.init({})
+    }, [])
     
   return (
     <div className="bg-navyblue py-5">
         <section id="contact">
             <Container>
                 <div className='mt-5 contact'>
-                    <h3 className="text-center text-white mt-5 font-32 font-700">CONTACT</h3>
-                    <div className="contact-line d-none d-md-block"></div>
-                    <div className="contact-mobile-line d-md-none"></div>
+                    <h3 data-aos="fade-right" className="text-center text-white mt-5 font-32 font-700">CONTACT</h3>
+                    <div data-aos="fade-left" className="contact-line d-none d-md-block"></div>
+                    <div data-aos="fade-left" className="contact-mobile-line d-md-none"></div>
                 </div>
-                <div className="text-center">
+                <div data-aos="fade-left" className="text-center">
                     <p className='my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
-                    <div>
+                    <div data-aos="zoom-in-up">
                         <form onSubmit={handleSubmit} action="">
                             <div className='input-div'>
                                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className='d-none d-md-inline input bg-form w-50' placeholder='Name'/>

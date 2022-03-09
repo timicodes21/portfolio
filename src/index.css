@@ -329,19 +329,6 @@ a.navlink:active{
   display: none;
 }
 
-.about{
-  animation: move 1s;
-}
-
-.project-animation {
-  animation: move 1s;
-}
-
-@keyframes move {
-  from{ transform: translateX(-60%)}
-  to{ transform: translateX(0)}
-}
-
 .mobile-icon{
   transform: scale(0.9);
 }
@@ -351,8 +338,6 @@ a.navlink:active{
   transform: scale(1.5);
   cursor: pointer;
 }
-
-
 
 
 
