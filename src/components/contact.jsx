@@ -29,13 +29,15 @@ const Contact = () => {
         <section id="contact">
             <Container>
                 <div className='mt-5 contact'>
-                    <h3 data-aos="fade-right" className="text-center text-white mt-5 font-32 font-700">CONTACT</h3>
-                    <div data-aos="fade-left" className="contact-line d-none d-md-block"></div>
-                    <div data-aos="fade-left" className="contact-mobile-line d-md-none"></div>
+                    <h3 data-aos="fade-down" className="d-none d-md-block text-center text-white mt-5 font-32 font-700">CONTACT</h3>
+                    <h3 data-aos="fade-down" className="d-md-none text-center text-white mt-5 font-32 font-700">CONTACT</h3>
+                    <div data-aos="fade-up" className="contact-line d-none d-md-block"></div>
+                    <div data-aos="fade-up" className="contact-mobile-line d-md-none"></div>
                 </div>
-                <div data-aos="fade-left" className="text-center">
-                    <p className='my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
-                    <div data-aos="zoom-in-up">
+                <div className="text-center">
+                    <p data-aos="zoom-in" className='d-none d-md-block my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
+                    <p data-aos="zoom-in" className='d-md-none my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
+                    <div data-aos="zoom-in">
                         <form onSubmit={handleSubmit} action="">
                             <div className='input-div'>
                                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className='d-none d-md-inline input bg-form w-50' placeholder='Name'/>

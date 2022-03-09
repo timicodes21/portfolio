@@ -31,9 +31,10 @@ const About = () => {
         <section id="about" className="mt-5">
             <Container>
                 <div className='mt-5 mb-3 about'>
-                    <h3 data-aos="fade-right" className="text-center text-ash mt-5 font-32 font-700">ABOUT</h3>
-                    <div data-aos="fade-left" className="d-none d-md-block about-line"></div>
-                    <div data-aos="fade-left" className="d-md-none about-mobile-line"></div>
+                    <h3 data-aos="fade-down" className="d-none d-md-block text-center text-ash mt-5 font-32 font-700">ABOUT</h3>
+                    <h3 data-aos="fade-down" className="d-md-none text-center text-ash mt-5 font-32 font-700">ABOUT</h3>
+                    <div data-aos="fade-up" className="d-none d-md-block about-line"></div>
+                    <div data-aos="fade-up" className="d-md-none about-mobile-line"></div>
                 </div>
                 <div className='mx-md-5'>
                     <Row className='mx-md-5 pt-5 gx-md-5'>
@@ -72,7 +73,7 @@ const About = () => {
                     </Row>
                 </div>
                 <Row className='px-md-5 pb-4'>
-                    <div data-aos="fade-right" className="ps-md-5 col-12 col-md-6">
+                    <div data-aos="zoom-in" className="ps-md-5 col-12 col-md-6">
                         <div className="text-center d-flex flex-column">
                             <div className="">
                                 <Image fluid src={picture} className="about-image" />
@@ -83,7 +84,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" className="col-12 col-md-6 pt-5 pt-md-1">
+                    <div data-aos="zoom-in" className="col-12 col-md-6 pt-5 pt-md-1">
                         <div>
                         {display1 && <Image onMouseEnter={handleMouse1} onClick={handleMouse1} fluid src={resume} className="about-image" />}
                         {display2 && <div onMouseLeave={handleMouse2} className="px-md-5 mt-5">

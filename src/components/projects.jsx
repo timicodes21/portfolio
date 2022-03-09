@@ -37,9 +37,10 @@ const Projects = () => {
         <section id="portfolio">
             <Container>
               <div className="mt-3 mt-md-5 mb-2 about" >
-                <h3 data-aos="fade-left" className="text-center text-ash mt-5 font-32 font-700"> PROJECTS</h3>
-                <div data-aos="fade-right" className="d-none d-md-block about-line"></div>
-                <div data-aos="fade-right" className="d-md-none about-mobile-line"></div>
+                <h3 data-aos="fade-down" className="d-none d-md-block text-center text-ash mt-5 font-32 font-700"> PROJECTS</h3>
+                <h3 data-aos="fade-down" className="d-md-none text-center text-ash mt-5 font-32 font-700"> PROJECTS</h3>
+                <div data-aos="fade-up" className="d-none d-md-block about-line"></div>
+                <div data-aos="fade-up" className="d-md-none about-mobile-line"></div>
               </div>
               <div>
                 <Row>
