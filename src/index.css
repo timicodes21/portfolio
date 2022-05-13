@@ -335,10 +335,15 @@ a.navlink:active{
 
 .close-icon{
   color: #E31B6D;
-  transform: scale(1.5);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
+.hamburger{
+  transform: scale(1.5) !important;
+}
 
-
+.close{
+  transform: scale(1.4) !important;
+}
 

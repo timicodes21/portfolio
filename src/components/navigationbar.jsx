@@ -46,7 +46,7 @@ const Navigationbar = () => {
             <div className='navigbar d-md-none'>
                 <Container className="">
                     <div className="d-flex flex-column">
-                        {open && <div className="p-3 d-flex justify-content-end"><FiMenu onClick={handleClick} /></div>}
+                        {open && <div className="p-3 d-flex justify-content-end"><FiMenu className='hamburger' onClick={handleClick} /></div>}
                         {close && <div className="p-3 d-flex justify-content-end"><AiOutlineClose className='close' onClick={handleClose} /></div>}
                         <div className="mobile-nav" style={display? openStyle : closeStyle}>
                             <div className="p-2"><a href="#home" className='text-white font-14 navlink'>HOME</a></div>
