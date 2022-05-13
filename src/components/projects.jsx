@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Image } from 'react-bootstrap';
+import { Container, Row, Image, Col } from 'react-bootstrap';
 import schedule from '../assets/schedule.jpeg'
 import weather from '../assets/weather.jpeg'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -58,7 +58,7 @@ const Projects = () => {
                           </div>
                           <div className="mt-2">
                             <p className='text-ash font-14 mb-5'>My Schedule makes life easier by helping you plan your task and schedule ahead of time and also a platform for time management tips.Notebook, calender, presentation Platform, Reminders, Appointments, Resolutions.</p>
-                            <a href="https://timicodes21.github.io/myschedule/#/home" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
+                            <a href="https://timicodes21.github.io/myschedule/#/home" target="_blank" rel="noreferrer" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
                           </div>
                         </div>
                       </div>}
@@ -78,12 +78,34 @@ const Projects = () => {
                           </div>
                           <div className="mt-2">
                             <p className='text-ash font-14 mb-5'>Get weather details from cities around the world.</p>
-                            <a href="https://timicodes21.github.io/weather-app/" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
+                            <a href="https://timicodes21.github.io/weather-app/" target="_blank" rel="noreferrer" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
                           </div>
                         </div>
                       </div>}
                     </div>
                   </div>
+                </Row>
+                <Row className="my-3">
+                  <Col xs={12} md={6}>
+                    <div className="p-md-3 my-2">
+                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/taskmanager/#/" target="_blank" rel="noreferrer" className="text-white">Task Manager App</a></button>
+                    </div>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <div className="p-md-3 my-2">
+                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/countries/" target="_blank" rel="noreferrer" className="text-white">Countries App</a></button>
+                    </div>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <div className="p-md-3 my-2">
+                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/drivers/" target="_blank" rel="noreferrer" className="text-white">Driver's Database App</a></button>
+                    </div>
+                  </Col> 
+                  <Col xs={12} md={6}>
+                    <div className="p-md-3 my-2">
+                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/web-practice/" target="_blank" rel="noreferrer" className="text-white">HTML/CSS Design Page</a></button>
+                    </div>
+                  </Col>
                 </Row>
               </div>
             </Container>

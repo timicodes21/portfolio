@@ -118,6 +118,17 @@ body{
   background-color: transparent;
 }
 
+.project-button{
+  border: 2px solid #E31B6D;
+  transition: 0.5s;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #E31B6D;
+}
+
+.project-button:hover{
+  transform: scale(1.01);
+}
+
 .portfolio-button:hover{
   background-color: #E31B6D;
   color: #E31B6D;
