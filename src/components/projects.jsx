@@ -46,7 +46,7 @@ const Projects = () => {
                 <Row>
                   <div className="col-12 col-md-6">
                     <div>
-                      {display1 && <div data-aos="slide-up"><Image fluid src={schedule} className="about-image" onMouseEnter={handleMouse1} onClick={handleMouse1} /></div>}
+                      {display1 && <div><Image fluid src={schedule} className="about-image" onMouseEnter={handleMouse1} onClick={handleMouse1} /></div>}
                       {display2 && <div onMouseLeave={handleMouse2} className="px-md-5 mt-5">
                         <div className="bg-white p-5">
                           <div className="mb-2 pb-5">
@@ -66,7 +66,7 @@ const Projects = () => {
                   </div>
                   <div className="col-12 col-md-6">
                     <div>
-                      {display3 && <div data-aos="slide-up"><Image onMouseEnter={handleMouse3} onClick={handleMouse3} fluid src={weather} className="about-image" /></div>  }
+                      {display3 && <div><Image onMouseEnter={handleMouse3} onClick={handleMouse3} fluid src={weather} className="about-image" /></div>  }
                       {display4 && <div onMouseLeave={handleMouse4} className="px-md-5 mt-5">
                         <div className="bg-white p-5">
                           <div className="mb-2 pb-5">

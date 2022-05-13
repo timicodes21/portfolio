@@ -23,22 +23,22 @@ const Footer = () => {
                                 <Row className="px-5">
                                     <div className="col-3">
                                         <div className="social-div pointer">
-                                            <a href="https://www.linkedin.com/in/timileyin-babalola-283b4b149/"><FaLinkedinIn /></a>
+                                            <a href="https://www.linkedin.com/in/timileyin-babalola-283b4b149/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                                         </div>
                                     </div>
                                     <div className="col-3">
                                         <div className="social-div pointer">
-                                            <a href="https://wa.me/+2348124793586"><FaWhatsapp /></a>
+                                            <a href="https://wa.me/+2348124793586" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="social-div pointer" target="_blank">
+                                            <a href="https://github.com/timicodes21" target="_blank" rel="noreferrer"><FaGithub /></a>
                                         </div>
                                     </div>
                                     <div className="col-3">
                                         <div className="social-div pointer">
-                                            <a href="https://github.com/timicodes21"><FaGithub /></a>
-                                        </div>
-                                    </div>
-                                    <div className="col-3">
-                                        <div className="social-div pointer">
-                                            <a href="https://www.instagram.com/dev_timi/"><FaInstagramSquare /></a>
+                                            <a href="https://www.instagram.com/dev_timi/" target="_blank" rel="noreferrer"><FaInstagramSquare /></a>
                                         </div>
                                     </div>
                                 </Row>

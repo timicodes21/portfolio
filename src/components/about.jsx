@@ -80,7 +80,7 @@ const About = () => {
                             </div>
                             <div className='margin-minus'>
                                 <p className='font-500 font-24 text-ash'>Summary?</p>
-                                <p className='text-ash font-14'>A <span className="text-cyan font-500">problem solver</span> and <span className="text-cyan font-500">detailed-oriented software developer</span> with less than a year experience of building websites and developing web applications. I am passionate about building a career in software development. <br />Skilled using <span className="text-cyan font-500">HTML, CSS, Bootstrap, Java script</span> and <span className="text-cyan font-500">React Js</span>. I am Excited as I look forward to developing my skills, building Web applications and tackling some of the most pressing problems in the industry to create innovative solutions for clients.</p>
+                                <p className='text-ash font-14'>A <span className="text-cyan font-500">problem solver</span> and <span className="text-cyan font-500">detailed-oriented software developer</span> with professional experience in building websites and developing web applications. I am passionate about building a career in software development. <br />Skilled using <span className="text-cyan font-500">HTML, CSS, Bootstrap, Java script, React JS, Redux, Node JS, Express JS</span> and <span className="text-cyan font-500">MongoDB</span>. A well-organized team player with the ability to produce content on time with attention to details demonstrating strong communication and leadership skills. Willingness to learn and develop skills in software development coupled with staying up to date with current trends.</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ const About = () => {
                                 <p className="text-pink font-14">Frontend Developer</p>
                             </div>
                             <div className="mt-5">
-                                <a href="https://docs.google.com/document/d/1CE5eTVTJm1W4IoU8rWmZUKK4WQ8aM7IJb0BoSjcqK-U/edit?usp=sharing" className='pointer text-ash bg-transparent portfolio-button'>View Resume</a>
+                                <a href="https://docs.google.com/document/d/1CE5eTVTJm1W4IoU8rWmZUKK4WQ8aM7IJb0BoSjcqK-U/edit?usp=sharing" className='pointer text-ash bg-transparent portfolio-button' target="_blank" rel="noreferrer">View Resume</a>
                             </div>
                             </div>
                         </div>}

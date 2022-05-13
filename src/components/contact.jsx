@@ -28,16 +28,17 @@ const Contact = () => {
     <div className="bg-navyblue py-5">
         <section id="contact">
             <Container>
-                <div className='mt-5 contact'>
-                    <h3 data-aos="fade-down" className="d-none d-md-block text-center text-white mt-5 font-32 font-700">CONTACT</h3>
-                    <h3 data-aos="fade-down" className="d-md-none text-center text-white mt-5 font-32 font-700">CONTACT</h3>
-                    <div data-aos="fade-up" className="contact-line d-none d-md-block"></div>
-                    <div data-aos="fade-up" className="contact-mobile-line d-md-none"></div>
+                <div className='mt-5 contact' data-aos="fade-down">
+                    <h3 className="d-none d-md-block text-center text-white mt-5 font-32 font-700">CONTACT</h3>
+                    <h3 className="d-md-none text-center text-white mt-5 font-32 font-700">CONTACT</h3>
+                    <div className="contact-line d-none d-md-block"></div>
+                    <div className="contact-mobile-line d-md-none"></div>
                 </div>
-                <div className="text-center">
-                    <p data-aos="zoom-in" className='d-none d-md-block my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
-                    <p data-aos="zoom-in" className='d-md-none my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
-                    <div data-aos="zoom-in">
+                <div className="text-center" data-aos="fade-down">
+                    <p className='d-none d-md-block my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
+                    <p className='d-md-none my-4 font-500 font-18 text-cyan'>Have a question or want to work together?</p>
+                    <p className='my-2 font-500 font-18 text-white'>Send mail to <span>timileyinbabalola42@gmail.com</span></p>
+                    <div>
                         <form onSubmit={handleSubmit} action="">
                             <div className='input-div'>
                                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className='d-none d-md-inline input bg-form w-50' placeholder='Name'/>
