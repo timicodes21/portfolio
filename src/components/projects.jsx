@@ -1,117 +1,214 @@
-import React, { useState, useEffect } from 'react'
-import { Container, Row, Image, Col } from 'react-bootstrap';
-import schedule from '../assets/schedule.jpeg'
-import weather from '../assets/weather.jpeg'
-import { AiOutlineClose } from 'react-icons/ai'
-import Aos from "aos"
+import React, { useState, useEffect } from "react";
+import { Container, Row, Image, Col } from "react-bootstrap";
+import schedule from "../assets/schedule.jpeg";
+import weather from "../assets/weather.jpeg";
+import { AiOutlineClose } from "react-icons/ai";
+import Aos from "aos";
 
 const Projects = () => {
-  const [display1, setDisplay1] = useState(true)
-  const [display2, setDisplay2] = useState(false)
-  const [display3, setDisplay3] = useState(true)
-  const [display4, setDisplay4] = useState(false)
+  const [display1, setDisplay1] = useState(true);
+  const [display2, setDisplay2] = useState(false);
+  const [display3, setDisplay3] = useState(true);
+  const [display4, setDisplay4] = useState(false);
 
   const handleMouse1 = () => {
     setDisplay1(false);
     setDisplay2(true);
-  }
+  };
   const handleMouse2 = () => {
     setDisplay1(true);
-    setDisplay2(false)
-  }
+    setDisplay2(false);
+  };
   const handleMouse3 = () => {
     setDisplay3(false);
-    setDisplay4(true)
-  }
+    setDisplay4(true);
+  };
   const handleMouse4 = () => {
     setDisplay3(true);
-    setDisplay4(false)
-  }
+    setDisplay4(false);
+  };
 
   useEffect(() => {
-    Aos.init({ duration: 1000})
-  }, [])
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
     <div className="bg-project py-5">
-        <section id="portfolio">
-            <Container>
-              <div className="mt-3 mt-md-5 mb-2 about" >
-                <h3 data-aos="fade-down" className="d-none d-md-block text-center text-ash mt-5 font-32 font-700"> PROJECTS</h3>
-                <h3 data-aos="fade-down" className="d-md-none text-center text-ash mt-5 font-32 font-700"> PROJECTS</h3>
-                <div data-aos="fade-up" className="d-none d-md-block about-line"></div>
-                <div data-aos="fade-up" className="d-md-none about-mobile-line"></div>
-              </div>
-              <div>
-                <Row>
-                  <div className="col-12 col-md-6">
-                    <div>
-                      {display1 && <div><Image fluid src={schedule} className="about-image" onMouseEnter={handleMouse1} onClick={handleMouse1} /></div>}
-                      {display2 && <div onMouseLeave={handleMouse2} className="px-md-5 mt-5">
-                        <div className="bg-white p-5">
-                          <div className="mb-2 pb-5">
-                            <div className="d-flex justify-content-between">
-                              <h4 className="font-18 font-700 text-ash">My Schedule</h4>
-                              <AiOutlineClose className='close-icon' onClick={handleMouse2} />
-                            </div>
-                            <p className="text-pink font-14">React Js</p>
-                          </div>
-                          <div className="mt-2">
-                            <p className='text-ash font-14 mb-5'>My Schedule makes life easier by helping you plan your task and schedule ahead of time and also a platform for time management tips.Notebook, calender, presentation Platform, Reminders, Appointments, Resolutions.</p>
-                            <a href="https://timicodes21.github.io/myschedule/#/home" target="_blank" rel="noreferrer" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
-                          </div>
-                        </div>
-                      </div>}
-                    </div>
+      <section id="portfolio">
+        <Container>
+          <div className="mt-3 mt-md-5 mb-2 about">
+            <h3
+              data-aos="fade-down"
+              className="d-none d-md-block text-center text-ash mt-5 font-32 font-700"
+            >
+              {" "}
+              PROJECTS
+            </h3>
+            <h3
+              data-aos="fade-down"
+              className="d-md-none text-center text-ash mt-5 font-32 font-700"
+            >
+              {" "}
+              PROJECTS
+            </h3>
+            <div
+              data-aos="fade-up"
+              className="d-none d-md-block about-line"
+            ></div>
+            <div
+              data-aos="fade-up"
+              className="d-md-none about-mobile-line"
+            ></div>
+          </div>
+          <div>
+            <Row className="my-3">
+              <Col xs={12} md={6}>
+                <a
+                  href="https://demo.respay.com/signin"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Respay - Property Management App
+                    </button>
                   </div>
-                  <div className="col-12 col-md-6">
-                    <div>
-                      {display3 && <div><Image onMouseEnter={handleMouse3} onClick={handleMouse3} fluid src={weather} className="about-image" /></div>  }
-                      {display4 && <div onMouseLeave={handleMouse4} className="px-md-5 mt-5">
-                        <div className="bg-white p-5">
-                          <div className="mb-2 pb-5">
-                            <div className="d-flex justify-content-between">
-                              <h4 className="font-18 font-700 text-ash">Weather App</h4>
-                              <AiOutlineClose className='close-icon' onClick={handleMouse4} />
-                            </div>
-                            <p className="text-pink font-14">JavaScript</p>
-                          </div>
-                          <div className="mt-2">
-                            <p className='text-ash font-14 mb-5'>Get weather details from cities around the world.</p>
-                            <a href="https://timicodes21.github.io/weather-app/" target="_blank" rel="noreferrer" className='pointer text-ash bg-transparent portfolio-button'>view site</a>
-                          </div>
-                        </div>
-                      </div>}
-                    </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://cepcs-client.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      E-learning Website / App
+                    </button>
                   </div>
-                </Row>
-                <Row className="my-3">
-                  <Col xs={12} md={6}>
-                    <div className="p-md-3 my-2">
-                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/taskmanager/#/" target="_blank" rel="noreferrer" className="text-white">Task Manager App</a></button>
-                    </div>
-                  </Col>
-                  <Col xs={12} md={6}>
-                    <div className="p-md-3 my-2">
-                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/countries/" target="_blank" rel="noreferrer" className="text-white">Countries App</a></button>
-                    </div>
-                  </Col>
-                  <Col xs={12} md={6}>
-                    <div className="p-md-3 my-2">
-                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/drivers/" target="_blank" rel="noreferrer" className="text-white">Driver's Database App</a></button>
-                    </div>
-                  </Col> 
-                  <Col xs={12} md={6}>
-                    <div className="p-md-3 my-2">
-                      <button className="p-3 w-100 text-white project-button shadow"><a href="https://timicodes21.github.io/web-practice/" target="_blank" rel="noreferrer" className="text-white">HTML/CSS Design Page</a></button>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </Container>
-        </section>
-    </div>
-  )
-}
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://social-apppp.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Tik-Tok Clone
+                    </button>
+                  </div>
+                </a>
+              </Col>
 
-export default Projects
+              <Col xs={12} md={6}>
+                <a
+                  href="https://www.gameporte.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Gameporte - Landing Page
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://expo.dev/@developer_timi/hello-food"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Hello Food - Food Delivery Mobile App
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://futuresoft.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Startup Landing Page
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://timicodes21.github.io/taskmanager/#/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Task Manager App
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://timicodes21.github.io/countries/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Countries App
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://timicodes21.github.io/drivers/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      Driver's Database App
+                    </button>
+                  </div>
+                </a>
+              </Col>
+              <Col xs={12} md={6}>
+                <a
+                  href="https://thrift-store-api.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <div className="p-md-3 my-2">
+                    <button className="p-3 w-100 text-white project-button shadow">
+                      E-commerce Api Documentation
+                    </button>
+                  </div>
+                </a>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </section>
+    </div>
+  );
+};
+
+export default Projects;
