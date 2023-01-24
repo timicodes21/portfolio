@@ -166,7 +166,7 @@ const About = () => {
                     <span className="text-cyan font-500">
                       high-quality code.
                     </span>{" "}
-                    Adept at
+                    Adept at{" "}
                     <span className="text-cyan font-500">
                       testing, debugging
                     </span>{" "}
