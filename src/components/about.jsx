@@ -157,21 +157,26 @@ const About = () => {
                 <div className="margin-minus">
                   <p className="font-500 font-24 text-ash">Summary?</p>
                   <p className="text-ash font-14">
-                    Experienced Frontend Developer, writing{" "}
+                    Experienced Frontend Engineer with a strong background in
+                    writing{" "}
                     <span className="text-cyan font-500">
-                      readable, scalable
+                      efficient, scalable
                     </span>{" "}
                     and{" "}
-                    <span className="text-cyan font-500">quality code.</span>{" "}
-                    <span className="text-cyan font-500">Testing</span> and{" "}
-                    <span className="text-cyan font-500">debugging code, </span>
-                    designing interfaces and building scalable web and mobile
-                    applications using React JS, React Native, Next Js and
-                    TypeScript with the ability to deliver an immersive and
-                    engaging user experience through efficient coding practices.
-                    Curiosity to learn and develop future skills in software
-                    development coupled with staying up to date with current
-                    trends.
+                    <span className="text-cyan font-500">
+                      high-quality code.
+                    </span>{" "}
+                    Adept at
+                    <span className="text-cyan font-500">
+                      testing, debugging
+                    </span>{" "}
+                    and <span className="text-cyan font-500">designing </span>
+                    interfaces (web and mobile applications) using React JS,
+                    React Native, Next Js and TypeScript. Proven ability to
+                    create immersive and engaging user experiences through
+                    efficient coding practices. Committed to continuously
+                    learning and staying current with the latest trends and
+                    advancements in software development.
                   </p>
                 </div>
               </div>
